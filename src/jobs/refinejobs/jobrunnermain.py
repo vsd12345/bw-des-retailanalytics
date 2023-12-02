@@ -1,11 +1,10 @@
 import boto3
 import sys
-print("Before Append:", sys.path)
-
-sys.path.append('c:\\workspace\\bwprojects\\snowflakeDemo\\bw-des-retail-analytics\\utils')
-print("After Append:", sys.path)
-from utils.vaultUtil import VaultClient
-from utils.awsUtil import AWSConnector
+import utils.vaultUtil
+import utils.awsUtil
+sys.path.append('/c/workspace/bwprojects/snowflakeDemo/bw-des-retail-analytics/src/utils')
+#from utils import VaultClient
+#from utils.awsUtil import AWSConnector
 
 
 VAULT_URL = "http://127.0.0.1:8200"
